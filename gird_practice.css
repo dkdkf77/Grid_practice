@@ -1,0 +1,30 @@
+/* 1rem의 값을 아예 지정된 px 로 바꾸고 싶으면 html에 px 값을 지정해준다  */
+html {
+  font-size: 36px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #222;
+  color: #222;
+}
+
+.page {
+  /* 1000/1200 */
+  width: 83.333%;
+  /* 100/1200 */
+  padding-left: 8.3333%;
+  /* calc = 계산기 함수  */
+  padding-right: calc(100 / 1200 * 100%);
+  background: white;
+  margin: auto;
+}
+
+.page-title {
+  /* font-size : 133px */
+  /* rem은 고정 값이라서 창 크기가 커진다고 폰트 사이즈가 같이 커지고 작아지고 하지는 않는다 */
+  /* font-size: calc(133 / 36 * 1rem); */
+  /* vw = viewport width */
+  font-size: 5vw;
+  text-transform: uppercase;
+}
